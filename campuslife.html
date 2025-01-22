@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Life - Enhanced</title>
+    <link rel="stylesheet" href="indexstyle.css">
+
+    <script src="animations_script.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="C:\Users\sylin\OneDrive\Desktop\School Website\meow\Code neccesity\translogo-removebg-preview.png" alt="Logo">
+                MANOLO FORTICH NHS
+            </div>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">☰</label>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="newsroom.html">Newsroom</a></li>
+                <li><a href="alumni.html">Alumni</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="campuslife.html" class="active">Campus Life</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="section-content">
+            <h1>Campus Life and Stories</h1>
+            <div class="student-story">
+                <img src="C:\Users\sylin\OneDrive\Desktop\School Website\meow\Code neccesity\Guy.jpg" alt="Student Photo 1" class="student-photo">
+                <h2>I love MFNHS! Thank you for the knowledge!</h2>
+                <h3>— Sismir Ahmud</h3>
+            </div>
+
+            <div class="student-story">
+                <img src="C:\Users\sylin\OneDrive\Desktop\School Website\meow\Code neccesity\Guy1.jpg" alt="Student Photo 2" class="student-photo">
+                <h2>MFNHS my second home! Literal.</h2>
+                <h3>— Amir Muhammad</h3>
+            </div>
+        </div>
+        <a href="#top" class="back-to-top">↑ Top</a>
+    </section>
+
+    <footer>
+        <div class="footer-row">
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><a href="#">Tel #: 800-900-8000</a></li>
+                    <li><a href="#">Phone #: 0999-000-0000</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Email Us</h4>
+                <ul>
+                    <li><a href="mailto:MFNHS@gmail.com">MFNHS@gmail.com</a></li>
+                    <li><a href="mailto:MFHNS@yahoo.com">MFHNS@yahoo.com</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Social Media</h4>
+                <ul>
+                    <li><a href="https://www.facebook.com/ManoloFortichNHSOfficial/photos/">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/explore/locations/802321120/manolo-fortich-national-high-school/">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Show back-to-top button on scroll
+        const backToTop = document.querySelector('.back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTop.style.display = 'block';
+            } else {
+                backToTop.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

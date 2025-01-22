@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Academics</title>
+    <link rel="stylesheet" href="indexstyle.css">
+
+    <script src="animations_script.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="C:\Users\sylin\OneDrive\Desktop\School Website\meow\Code neccesity\translogo-removebg-preview.png" alt="Logo">
+                MANOLO FORTICH NHS
+            </div>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">☰</label>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="newsroom.html">Newsroom</a></li>
+                <li><a href="alumni.html">Alumni</a></li>
+                <li><a href="academics.html" class="active">Academics</a></li>
+                <li><a href="campuslife.html">Campus Life</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="section-content">
+            <h1>ACADEMICS</h1>
+            <h2>Junior High School</h2>
+            <ul>
+                Special Program for Arts<br>
+                Special Program for STE<br>
+                Special Program for Journalism<br>
+            </ul>
+
+            <h2>Senior High School</h2>
+            <ul>
+                Special Program for STE<br>
+                Special Program for ABM<br>
+                Special Program for TVL<br>
+                Special Program for SMAW<br>
+
+            </ul>
+        </div>
+        <a href="#top" class="back-to-top">↑ Top</a>
+    </section>
+
+    <footer>
+        <div class="footer-row">
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><a href="#">Tel #: 800-900-8000</a></li>
+                    <li><a href="#">Phone #: 0999-000-0000</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Email Us</h4>
+                <ul>
+                    <li><a href="mailto:MFNHS@gmail.com">MFNHS@gmail.com</a></li>
+                    <li><a href="mailto:MFHNS@yahoo.com">MFHNS@yahoo.com</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Social Media</h4>
+                <ul>
+                    <li><a href="https://www.facebook.com/ManoloFortichNHSOfficial/photos/">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/explore/locations/802321120/manolo-fortich-national-high-school/">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Show back-to-top button on scroll
+        const backToTop = document.querySelector('.back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTop.style.display = 'block';
+            } else {
+                backToTop.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

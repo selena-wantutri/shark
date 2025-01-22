@@ -1,0 +1,194 @@
+/* Global Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background: #1e9339;
+    color: white;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.navbar li a.active, 
+.navbar li a:hover {
+    background: white;
+    color: #1e9339;
+    border-radius: 5px;
+}
+
+.menu-icon {
+    display: none;
+}
+
+/* Section Styles */
+section {
+    padding: 20px;
+    background: white;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 1200px;
+    text-align: center;
+}
+
+section.alumni {
+    text-align: left;
+    
+}
+
+.section-content h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #1e9339;
+}
+
+.section-content .news-item {
+    margin-bottom: 20px;
+}
+
+.section-content img {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: contain;
+}
+
+.section-content .news-item h2 {
+    color: #1e9339;
+}
+
+/* Footer Styles */
+footer {
+    background: #e1e0e0;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin: 5px 0;
+}
+
+.footer-col ul li a {
+    text-decoration: none;
+    color: #7383ff;
+    transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: white;
+}
+
+/* Back-to-Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #1e9339;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 16px;
+    display: none;
+    z-index: 1000;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.back-to-top:hover {
+    transform: scale(1.1);
+    background: #155724;
+}
+
+/* Responsive Styles for .menu-icon */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+    
+    .navbar {
+        display: none;
+        flex-direction: column;
+        background: #1e9339;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+    }
+    
+    .navbar.active {
+        display: flex;
+    }
+    
+    .navbar li {
+        text-align: center;
+        margin: 5px 0;
+    }
+}
+
